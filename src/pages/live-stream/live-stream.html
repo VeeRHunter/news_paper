@@ -1,0 +1,86 @@
+<!--
+  Generated template for the LiveStreamPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-row class="header_row">
+    <ion-col col-2>
+      <ion-row class="header_menu">
+        <img src="assets/imgs/menu.png" menuToggle class="menu_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+    <ion-col col-3>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/logo.png" class="logo_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-3>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-row class="logoname_row">
+    <span class="logo_span">
+      Bienvenidos a
+    </span>
+  </ion-row>
+
+  <!-- <ion-row class="logoimage_row">
+    <span class="logoname_span">
+      Logo Here
+    </span>
+  </ion-row> -->
+
+  <ion-row class="logoimage_">
+    <img src="assets/imgs/star_logo.png" class="logoname_" />
+  </ion-row>
+
+  <ion-row class="logo_detail_row">
+    <span class="logo_detail_span">
+      Esta funcion esta limitada solo para Charlotte, nc
+    </span>
+  </ion-row>
+
+  <ion-row class="button_row" *ngIf="visit_state">
+    <button ion-button class="button_style">
+      Ahora en Vivo
+    </button>
+  </ion-row>
+
+  <ion-row class="button_row" *ngIf="!visit_state">
+    <span class="none_style">
+      Lo sentimos No se encuentra Disponible para su area
+    </span>
+  </ion-row>
+
+  <ion-row class="someText_row">
+    <span class="someText_span">
+      Some text Here:
+    </span>
+  </ion-row>
+
+  <ion-row class="other1_row">
+    <span class="other_span">
+      is simply dummy text of the printing and typesetting industry.
+    </span>
+  </ion-row>
+
+  <ion-row class="other2_row">
+    <span class="other_span">
+      Powered by Estrella TV Charlotte
+    </span>
+    <span class="other_span">
+      Support: Sample@sample.com
+    </span>
+  </ion-row>
+
+</ion-content>

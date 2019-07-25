@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-row class="header_row">
+    <ion-col col-2>
+      <ion-row class="header_menu">
+        <img src="assets/imgs/menu.png" menuToggle class="menu_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+    <ion-col col-3>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/logo.png" class="logo_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-3>
+    </ion-col>
+    <ion-col col-2>
+      <ion-row class="stream_row" (click)="goto_stream()" >
+        <img src="assets/imgs/stream.png" class="image_stream" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-row class="first_image">
+    <img src="{{top_news1.image}}" class="firstImage_class" (click)="goto_fullPost()" />
+  </ion-row>
+
+  <ion-row class="first_title">
+    <ion-row class="style1_row">
+      <span class="first_span" [innerHTML]="top_news1.title">
+      </span>
+    </ion-row>
+    <ion-row class="style2_row">
+      <span class="style2_span" [innerHTML]="top_news1.title_description">
+      </span>
+    </ion-row>
+    <ion-row class="time_row">
+      <span class="time_class">
+        {{top_news1.date}}
+      </span>
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="border_row"></ion-row>
+
+  <ion-row *ngFor="let list of show_news;let i = index;">
+    <!-- <ion-row class="border_row"></ion-row> -->
+
+    <!-- <ion-row class="admob_row" *ngIf="i == 1 || i == 3">
+      <ion-row class="real_admob_row">
+        <img src="assets/imgs/admob.png" class="image_abmob" (click)="goto_fullPosts(i)"/>
+      </ion-row>
+    </ion-row> -->
+
+    <ion-row class="include_image">
+      <ion-col col-7>
+        <ion-row class="include_title1_row">
+          <span class="include_title1_span" [innerHTML]="list.title">
+          </span>
+        </ion-row>
+        <ion-row class="include_title2_row">
+          <span class="include_title2_span" [innerHTML]="list.title_description">
+
+          </span>
+        </ion-row>
+        <ion-row class="include_title3_row">
+          <span class="include_title3_span">
+            {{list.date}}
+          </span>
+        </ion-row>
+      </ion-col>
+      <ion-col col-5>
+        <ion-row class="include_image_row">
+          <img src="{{list.image}}" class="include_imageClass" (click)="goto_fullPosts(i)" />
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="border_row"></ion-row>
+
+    <!-- <ion-row class="stick_row" *ngIf="i == 3">
+      <ion-col col-3>
+        <ion-row class="stick_title_row">
+          <span class="stick_title_span">
+            Deportes
+          </span>
+        </ion-row>
+      </ion-col>
+      <ion-col col-9>
+        <ion-row class="stick_row_row">
+          <img src="assets/imgs/stick.png" class="stick_image" />
+        </ion-row>
+      </ion-col>
+    </ion-row> -->
+
+    <!-- <ion-row class="stick_row" *ngIf="i == 5">
+      <ion-col col-3>
+        <ion-row class="stick_title_blue_row">
+          <span class="stick_title_span">
+            Farandula
+          </span>
+        </ion-row>
+      </ion-col>
+      <ion-col col-9>
+        <ion-row class="stick_row_row">
+          <img src="assets/imgs/stick_blue.png" class="stick_image" />
+        </ion-row>
+      </ion-col>
+    </ion-row> -->
+
+  </ion-row>
+</ion-content>

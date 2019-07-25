@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "CenturyGothic";
+    src: url('../assets/fonts/CenturyGothic.ttf') format('ttf');
+    src: url('../assets/fonts/CenturyGothic.ttf') format('truetype');
+    font-weight: initial;
+}
+ion-content{
+    font-family: 'CenturyGothic' !important;
+}
+ion-header{
+    font-family: 'CenturyGothic' !important;
+}
+
+ion-row{
+    width: 100%;
+}
+.content-md .scroll-content{
+    margin-top: 60px !important;
+}
+.content-ios .scroll-content{
+    margin-top: 79px !important;
+}
+.header-ios{
+    margin-top: 5%;
+}
+.header-md{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+.header_row{
+    background-color: #0071D5;
+    height: 60px;
+}
+.menu_image{
+    // width: 100%;
+    margin: auto;
+    margin-right: auto;
+}
+.header_menu{
+    height: 100%;
+}
+.header_logo{
+    height: 100%;
+}
+.logo_image{
+    margin: auto;
+    // width: 60%;
+    // height: 60%;
+}
+.setting_image{
+    margin: auto;
+}
+
+
+.menu_header{
+    background-color: #0071D5;
+    height: 60px;
+}
+.menu_header.header-ios{
+    margin-top: 19px !important;
+}
+.close_image{
+    margin: auto;
+}
+.menu_logo_image{
+    margin: auto;
+    // width: 60%;
+    // height: 70%;
+}
+.first_row{
+    height: 45px;
+}
+.title_row{
+    height: 100%;
+}
+.black_span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.back_blue_row{
+    background-color: #2E71CE;
+    padding-left: 16px;
+    height: 30px;
+}
+.heightfull_row{
+    height: 100%;
+}
+ion-menu{
+    font-size: 1.6rem;
+}
+.white_span{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: white;
+}
+.back_white_row{
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 16px;
+}
+.image_stream{
+    margin: auto;
+}
+
+
+
+.admob_row{
+    border: 1px solid #D0D0D0;
+    height: 40px;
+}
+.none_admob_span{
+    color: #95989A;
+    margin: auto;
+}
+.stream_row{
+    height: 100%;
+}
+.image_abmob{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.border_row{
+    border-bottom: 1px solid #E6E6E6;
+    width: 110%;
+    margin-left: -5%;
+    // margin-top: 3%;
+    // margin-bottom: 3%;
+}

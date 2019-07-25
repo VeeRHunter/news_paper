@@ -1,0 +1,86 @@
+<!--
+  Generated template for the FullPostDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-row class="header_row">
+    <ion-col col-2>
+      <ion-row class="header_menu">
+        <img src="assets/imgs/menu.png" menuToggle class="menu_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+    <ion-col col-3>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/logo.png" class="logo_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+    <ion-col col-1>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/comment.png" class="setting_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-1>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/share.png" class="setting_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-1>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/font_size.png" class="setting_image" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+</ion-header>
+
+<ion-content padding *ngIf="show_Data != null">
+
+  <ion-row class="first_image">
+    <img src="{{show_Data.image}}" class="firstImage_class" />
+  </ion-row>
+
+  <br>
+
+  <ion-row class="first_title">
+    <ion-row class="style1_row">
+      <span class="first_span" [innerHTML]="show_Data.title">
+      </span>
+    </ion-row>
+    <ion-row class="time_row">
+      <span class="time_class">
+        {{show_Data.date}}
+      </span>
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="border_row"></ion-row>
+
+  <ion-row class="admob_row">
+    <ion-row class="none_admob_row">
+      <span class="none_admob_span">
+        Ads by Google Admob
+      </span>
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="post_detail">
+    <span class="post_span" [innerHTML]="show_Data.content">
+    </span>
+  </ion-row>
+
+  <ion-row class="admob_row">
+    <ion-row class="none_admob_row">
+      <span class="none_admob_span">
+        Mobile Ads
+      </span>
+    </ion-row>
+  </ion-row>
+
+</ion-content>

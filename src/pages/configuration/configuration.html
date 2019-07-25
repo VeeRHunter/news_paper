@@ -1,0 +1,246 @@
+<!--
+  Generated template for the ConfigurationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-row class="header_row">
+    <ion-col col-2>
+      <ion-row class="header_menu">
+        <img src="assets/imgs/menu.png" menuToggle class="menu_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+    <ion-col col-3>
+      <ion-row class="header_logo">
+        <img src="assets/imgs/logo.png" class="logo_image" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-3>
+    </ion-col>
+    <ion-col col-2>
+      <ion-row class="stream_row">
+        <img src="assets/imgs/question.png" class="image_stream" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-row class="backBlue_white">
+    <span class="blueSpan">
+      Configuracion de Noticias
+    </span>
+  </ion-row>
+
+  <ion-row class="small_row">
+    <span class="small_span">
+      Instrucciones
+    </span>
+  </ion-row>
+
+  <ion-row class="small_row margin_top">
+    <span class="small_span">
+      Arrastre las categorias en el orden que le gustaria la aplicacion muestre sus noticias
+    </span>
+  </ion-row>
+
+  <ion-row class="small_row margin_top">
+    <span class="small_span">
+      Esta funcion cambiara el Feed en el menu de Inicio
+    </span>
+  </ion-row>
+
+  <ion-row class="small1_row margin_top">
+    <span class="small1_span">
+      Seleccione Su ciudad
+    </span>
+  </ion-row>
+
+  <ion-row class="include_toggle_row toggole_toop">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Charlotte, North Carolina
+        </span>
+        <ion-toggle [(ngModel)]="charlotte" (ionChange)="set_toggle('charlotte')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Triad, North Carolina
+        </span>
+        <ion-toggle [(ngModel)]="tirad" (ionChange)="set_toggle('tirad')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Jacksonville, Florida
+        </span>
+        <ion-toggle [(ngModel)]="jacksonville" (ionChange)="set_toggle('jacksonville')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="Blue_white">
+    <span class="blueSpan">
+      Configuracion de Noticias
+    </span>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Estados Unidos
+        </span>
+        <ion-toggle [(ngModel)]="estados" (ionChange)="set_toggle('estados')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Inmigracion
+        </span>
+        <ion-toggle [(ngModel)]="inmigracion" (ionChange)="set_toggle('inmigracion')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Deportes
+        </span>
+        <ion-toggle [(ngModel)]="deportes" (ionChange)="set_toggle('deportes')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Farandula
+        </span>
+        <ion-toggle [(ngModel)]="farandula" (ionChange)="set_toggle('farandula')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Opinion
+        </span>
+        <ion-toggle [(ngModel)]="opinion" (ionChange)="set_toggle('opinion')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Salud
+        </span>
+        <ion-toggle [(ngModel)]="salud" (ionChange)="set_toggle('salud')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Latinoamerica
+        </span>
+        <ion-toggle [(ngModel)]="latinoamerica" (ionChange)="set_toggle('latinoamerica')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="include_toggle_row">
+    <ion-col col-10>
+      <ion-row class="include_toggle">
+        <span class="toggle_span">
+          Mexico
+        </span>
+        <ion-toggle [(ngModel)]="mexico" (ionChange)="set_toggle('mexico')" color="secondary" class="toggle_class"></ion-toggle>
+      </ion-row>
+    </ion-col>
+    <ion-col col-2 class="border_leftRow">
+      <ion-row class="heightfull_row">
+        <img src="assets/imgs/grabber.png" class="long_menu" />
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

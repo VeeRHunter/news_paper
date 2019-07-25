@@ -1,0 +1,35 @@
+page-video-view {
+
+    .backRed_white{
+        width: 110%;
+        margin-left: -5%;
+        background-color: #FF3B30;
+        margin-top: -5%;
+        height: 25px;
+    }
+    .redSpan{
+        color: white;
+        font-weight: bold;
+        margin: auto;
+    }
+    .video_image{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .video_row{
+        margin-top: 10%;
+    }
+    .video_firstrow{
+        margin-top: 5%;
+    }
+    .admob_row{
+        margin-top: 5%;
+    }
+    .frame_class{
+        border: 1px solid red;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}

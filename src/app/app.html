@@ -1,0 +1,168 @@
+<ion-menu [content]="content" side="left">
+    <ion-header class="menu_header">
+        <ion-row class="title_row">
+            <ion-col col-2>
+                <ion-row style="height:100%;">
+                    <img src="assets/imgs/close.png" menuClose class="close_image" />
+                </ion-row>
+            </ion-col>
+            <ion-col col-3>
+            </ion-col>
+            <ion-col col-3>
+                <ion-row style="height:100%;">
+                    <img src="assets/imgs/logo.png" class="menu_logo_image" />
+                </ion-row>
+            </ion-col>
+            <ion-col col-3>
+            </ion-col>
+        </ion-row>
+    </ion-header>
+
+    <ion-content class="menu_content">
+        <ion-row class="first_row">
+            <ion-col col-2>
+                <ion-row class="heightfull_row" menuClose (click)="goto_page(0)">
+                    <img src="assets/imgs/home.png" class="menu_image" />
+                </ion-row>
+            </ion-col>
+            <ion-col col-8>
+                <ion-row class="heightfull_row" menuClose (click)="goto_page(0)">
+                    <span class="black_span">
+                        Inicio
+                    </span>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="back_blue_row" *ngIf="local">
+            <span class="white_span">
+                Locales
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="charlotte=='true'" menuClose (click)="goto_page(1)">
+            <span class="black_span">
+                Charlotte, North Carolina
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="tirad=='true'" menuClose (click)="goto_page(2)">
+            <span class="black_span">
+                Triad, North Carolina
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="jacksonville=='true'" menuClose (click)="goto_page(3)">
+            <span class="black_span">
+                Jacksonville, Florida
+            </span>
+        </ion-row>
+
+        <ion-row class="back_blue_row" *ngIf="nacional">
+            <span class="white_span">
+                Nacionales
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="estados=='true'" menuClose (click)="goto_page(4)">
+            <span class="black_span">
+                Estados Unidos
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="inmigracion=='true'" menuClose (click)="goto_page(5)">
+            <span class="black_span">
+                Inmigración
+            </span>
+        </ion-row>
+
+        <ion-row class="back_blue_row" *ngIf="category">
+            <span class="white_span">
+                Otras categorias
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="farandula=='true'" menuClose (click)="goto_page(6)">
+            <span class="black_span">
+                Farandula
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="opinion=='true'" menuClose (click)="goto_page(7)">
+            <span class="black_span">
+                Opinion
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="salud=='true'" menuClose (click)="goto_page(8)">
+            <span class="black_span">
+                Salud
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="deportes=='true'" menuClose (click)="goto_page(9)">
+            <span class="black_span">
+                Deportes
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="latinoamerica=='true'" menuClose (click)="goto_page(10)">
+            <span class="black_span">
+                Latinoamerica
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" *ngIf="mexico=='true'" menuClose (click)="goto_page(11)">
+            <span class="black_span">
+                Mexico
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row" menuClose (click)="goto_page(12)">
+            <span class="black_span">
+                Videos
+            </span>
+        </ion-row>
+
+        <ion-row class="back_blue_row">
+            <span class="white_span">
+                Opciones
+            </span>
+        </ion-row>
+
+        <ion-row class="back_white_row">
+            <ion-col col-2>
+                <ion-row class="heightfull_row">
+                    <img src="assets/imgs/setting.png" class="menu_image" menuClose (click)="goto_page(20)" />
+                </ion-row>
+            </ion-col>
+            <ion-col col-8>
+                <ion-row class="heightfull_row" menuClose (click)="goto_page(20)">
+                    <span class="black_span">
+                        Configuracion
+                    </span>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="back_white_row">
+            <ion-col col-2>
+                <ion-row class="heightfull_row">
+                    <img src="assets/imgs/person.png" class="menu_image" />
+                </ion-row>
+            </ion-col>
+            <ion-col col-8>
+                <ion-row class="heightfull_row" menuClose (click)="goto_page(21)">
+                    <span class="black_span">
+                        Contactos
+                    </span>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

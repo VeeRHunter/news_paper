@@ -1,0 +1,102 @@
+page-category-view {
+
+    .backBlue_white{
+        width: 110%;
+        margin-left: -5%;
+        background-color: #8C00AD;
+        margin-top: -5%;
+        height: 25px;
+    }
+    .blueSpan{
+        color: white;
+        font-weight: bold;
+        margin: auto;
+        text-transform: uppercase;
+    }
+
+    .firstImage_class{
+        width: 100%;
+        height: 100%;
+    }
+
+    .first_image{
+        width: 110%;
+        margin-left: -5%;
+    }
+    .first_span{
+        text-align: left;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .time_class{
+        float: right;
+        width: 100%;
+        margin-left: auto;
+        text-align: right;
+        font-size: 1rem;
+    }
+    .style2_span{
+        font-size: 1.5rem;
+    }
+    .include_title1_span{
+        font-size: 1.4rem;
+        font-weight: bold;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .include_title2_span{
+        font-size: 1.2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .include_title3_span{
+        font-size: 1rem;
+    }
+    .include_title3_row{
+        margin-top: 5px;
+    }
+    .include_title2_row{
+        margin-top: 5px;
+    }
+    .include_imageClass{
+        width: 100%;
+        height: 100%;
+    }
+    .include_image{
+        margin-top: 0%;
+    }
+    .stick_row{
+        margin-top:3%;
+    }
+    .stick_row ion-col{
+        padding: 0% !important;
+    }
+    .stick_title_row{
+        background-color: #00A539;
+        height: 25px;
+        border-radius: 5px;
+    }
+    .stick_title_span{
+        color: white;
+        font-weight: bold;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+    .stick_image{
+        margin: auto;
+    }
+    .stick_row_row{
+        height: 100%;
+    }
+    .stick_title_blue_row{
+        background-color: #3F00A5;
+        height: 25px;
+        border-radius: 5px;
+    }
+
+}
